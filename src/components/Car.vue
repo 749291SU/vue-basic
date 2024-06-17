@@ -27,8 +27,7 @@
         { id: '11', name: 'YuanShen'},
         { id: '11', name: 'ShanguoZhi'},
     ])
-
-
+    
     function changeGameName() {
         games[0].name = 'HHH'
     }

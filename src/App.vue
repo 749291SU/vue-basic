@@ -3,21 +3,18 @@
         <h1>Hello</h1>
         <!-- <Person /> -->
          <!-- <Car /> -->
-        <ComputedTest />
+        <WatchTest1 />
     </div>
 </template>
 
 <script lang="ts">
-    import Person from './components/Person.vue'
-    import Car from './components/Car.vue'
-    import ComputedTest from './components/ComputedTest.vue'
+    import WatchTest1 from './components/WatchTest1.vue';
 
     export default {
         name: 'App',
-        components: { Person, Car, ComputedTest }
+        components: { WatchTest1 }
     }
-</script >
-
+</script>
 <style>
 
 </style>

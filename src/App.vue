@@ -1,19 +1,26 @@
 <template>
     <div id="app">
-        <h1>Hello</h1>
-        <!-- <Person /> -->
-         <!-- <Car /> -->
-        <WatchTest1 />
+        <AllTest :personLis="personLis"/>
     </div>
 </template>
 
-<script lang="ts">
-    import WatchTest1 from './components/WatchTest1.vue';
+<script lang="ts" setup>
+    import WatchEffectTest from './components/WatchEffectTest.vue';
+    import RefTest from './components/RefTest.vue';
+    import TypeTest from './components/TypeTest.vue';
+    import AllTest from './components/AllTest.vue';
 
-    export default {
-        name: 'App',
-        components: { WatchTest1 }
-    }
+    import { type Persons } from '@/types';
+    import { reactive } from 'vue';
+
+    let personLis = reactive<Persons>([
+        { id: 1, name: 'Alice', age: 20 },
+        { id: 2, name: 'Bob', age: 21 },
+        { id: 3, name: 'Charlie', age: 22 }
+    ]);
+
+    // console.log(personLis)
+
 </script>
 <style>
 

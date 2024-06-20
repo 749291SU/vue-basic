@@ -11,10 +11,8 @@
 </template>
 
 <script lang='ts' setup>
-    import { deprecate } from 'util';
-import { reactive, watch, ref } from 'vue';
+    import { reactive, watch, ref } from 'vue';
 
-    
     let person = reactive({
         name: 'suxiaowen',
         age: 18,
